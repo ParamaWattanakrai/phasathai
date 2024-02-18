@@ -6,8 +6,6 @@ const HIGHLIGHTDICT = {
     '.consonant-class-trigger': '.consonant-class', '.mid-consonant-trigger': '.mid-consonant', '.high-consonant-trigger': '.high-consonant', '.low-consonant-trigger': '.low-consonant', '.paired-low-consonant-trigger': '.paired-low-consonant', '.unpaired-low-consonant-trigger': '.unpaired-low-consonant',
     '.trill-approximant-trigger': '.trill-approximant', '.fricative-trigger': '.fricative', '.alveolar-lateral-approximant-trigger': '.alveolar-lateral-approximant', '.glottal-stop-trigger': '.glottal-stop',  '.glottal-fricative-trigger': '.glottal-fricative',
     '.extra-row-trigger': '.extra-row',
-    '.ko-kai': '.k',
-    '.kh': '.kh',
 }
 
 function rgbToHsl(rgbString) {
@@ -50,24 +48,24 @@ const toggleHighlight = (key) => {
     console.log(HIGHLIGHTDICT[key])
     let selfElements = document.querySelectorAll(key);
     let affectedElements = document.querySelectorAll(HIGHLIGHTDICT[key]);
-    let highlightedElements = document.querySelectorAll('.highlight')
-    let highlightedTriggerElements = document.querySelectorAll('.trigger-highlight')
+    let highlightedElements = document.querySelectorAll('.group-highlight')
+    let highlightedTriggerElements = document.querySelectorAll('.group-trigger-highlight')
 
     if (highlightedElements.length > 0) {
         highlightedElements.forEach((element) => {
-            element.classList.remove('highlight')
+            element.classList.remove('group-highlight')
         })
         highlightedTriggerElements.forEach((element) => {
-            element.classList.remove('trigger-highlight')
+            element.classList.remove('group-trigger-highlight')
         })
     }
 
     if (selfElements[0] !== highlightedTriggerElements[0]) {
         selfElements.forEach((element) => {
-            element.classList.add('trigger-highlight')
+            element.classList.add('group-trigger-highlight')
         });
         affectedElements.forEach((element) => {
-            element.classList.add('highlight')
+            element.classList.add('group-highlight')
         });
     }
 }

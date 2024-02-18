@@ -52,7 +52,7 @@ body {
 }
 
 .consonant-table, th, td {
-  border-color: rgb(49, 49, 49);
+  border-color: rgb(0, 0, 0);
   border-style: solid;
   border-collapse: collapse;
 
@@ -73,74 +73,76 @@ td {
 .k-protocol {
   background-color: rgb(255, 121, 121);
 }
-.k-protocol.highlight {
+.k-protocol.group-highlight {
   color: rgb(255, 121, 121);
 }
 
 .ng-protocol {
   background-color: rgb(94, 255, 129);
 }
-.ng-protocol.highlight {
+.ng-protocol.group-highlight {
   color: rgb(94, 255, 129);
 }
 
 .t-protocol {
   background-color: rgb(132, 169, 255);
 }
-.t-protocol.highlight {
+.t-protocol.group-highlight {
   color: rgb(132, 169, 255);
 }
 
 .n-protocol {
   background-color: rgb(255, 172, 117);
 }
-.n-protocol.highlight {
+.n-protocol.group-highlight {
   color: rgb(255, 172, 117);
 }
 
 .p-protocol {
   background-color: rgb(255, 223, 136);
 }
-.p-protocol.highlight {
+.p-protocol.group-highlight {
   color: rgb(255, 223, 136);
 }
 
 .m-protocol {
   background-color: rgb(196, 146, 123);
 }
-.m-protocol.highlight {
-  color: rgb(196, 146, 123);
+.m-protocol.group-highlight {
+  color: rgb(143, 106, 89);
 }
 
 .y-protocol {
   background-color: rgb(158, 131, 255);
 }
-.y-protocol.hihglight {
+.y-protocol.group-highlight {
   color: rgb(158, 131, 255);
 }
 
 .w-protocol {
   background-color: rgb(255, 182, 243);
 }
-.w-protocol.highlight {
+.w-protocol.group-highlight {
   color: rgb(255, 182, 243);
 }
 
 .no-protocol {
   background-color: rgb(170, 170, 170);
 }
-.no-protocol.highlight {
+.no-protocol.group-highlight {
   color: rgb(170, 170, 170);
 }
 
-.highlight, .trigger-highlight {
-  border-color: black;
+.group-highlight, .group-trigger-highlight {
+  background-color: rgb(44, 42, 42);
+  transition: 0.5s;
 }
 
-.highlight {
-  background-color: rgb(19, 18, 18);
+.group-highlight {
+  
 }
 
-.trigger-highlight {
+.group-trigger-highlight {
+  background-color: rgb(255, 187, 0);
   border-width: 8px;
 }

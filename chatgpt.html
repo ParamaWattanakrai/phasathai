@@ -3,62 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get HSL Value from Div</title>
+  <title>CSS Transition Example</title>
   <style>
-    #myDiv {
-      width: 200px;
-      height: 200px;
-      background-color: hsl(120, 100%, 50%);
+    .a-class {
+      color: black;
+      transition: color 0.3s ease; /* Define the transition property */
+    }
+    .b-class {
+      color: red;
     }
   </style>
+  <script>
+    function toggleClass() {
+      var element = document.getElementById('target-element');
+      element.classList.toggle('b-class'); // Toggle the second class
+    }
+  </script>
 </head>
 <body>
-  <div id="myDiv"></div>
-
-  <script>
-    function rgbToHsl(rgbString) {
-    var match = rgbString.match(/\d+/g);
-    var r = parseInt(match[0]);
-    var g = parseInt(match[1]);
-    var b = parseInt(match[2]);
-    
-    console.log(r, g, b)
-
-    r /= 255, g /= 255, b /= 255;
-
-    var max = Math.max(r, g, b), min = Math.min(r, g, b);
-    var h, s, l = (max + min) / 2;
-
-    if (max == min) {
-        h = s = 0; // achromatic
-    } else {
-        var d = max - min;
-        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-        switch (max) {
-        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-        case g: h = (b - r) / d + 2; break;
-        case b: h = (r - g) / d + 4; break;
-        }
-
-        h /= 6;
-    }
-
-    h = h * 360
-    s = s * 100
-    l = l * 100
-
-    return [ h, s, l ];
-    }
-    
-    var div = document.getElementById('myDiv');
-
-    var computedStyle = window.getComputedStyle(div);
-
-    var backgroundColor = computedStyle.backgroundColor;
-
-    console.log("Background Color:", rgbToHsl(backgroundColor));
-    div.style.backgroundColor = 'hsl(' + rgbToHsl(backgroundColor)[0] + ', ' + rgbToHsl(backgroundColor)[1] + '%, ' + rgbToHsl(backgroundColor)[2] + '%)';
-  </script>
+  <button onclick="toggleClass()">Toggle Class</button>
+  <p id="target-element" class="a-class">Sample Text</p>
 </body>
 </html>
