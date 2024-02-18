@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.split-cell {
+  position: relative;
+}
+
+.split-cell > * {
+  background-color: rgb(255, 154, 154);
+  padding: 0.25em;
+  box-sizing: border-box;
+}
+
+.split-cell *:nth-child(1) {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(3% 0, 100% 0, 100% 97%);
+
+  text-align: right;
+}
+
+.split-cell *:nth-child(2) {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(97% 100%, 0 100%, 0 3%);
+
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.consonant-table {
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+.consonant-table, th, td {
+  border-color: rgb(49, 49, 49);
+  border-style: solid;
+  border-collapse: collapse;
+
+  min-width: 3.5em;
+  padding-block: 0.5rem;
+  text-align: center;
+}
+
+th:empty, td:empty {
+  border: none;
+}
+
+td {
+  font-size: 1.5em;
+}
+
+.k-protocol {
+  background-color: rgb(255, 121, 121);
+}
+
+.ng-protocol {
+  background-color: rgb(94, 255, 129);
+}
+
+.t-protocol {
+  background-color: rgb(132, 169, 255);
+}
+
+.n-protocol {
+  background-color: rgb(255, 172, 117);
+}
+
+.p-protocol {
+  background-color: rgb(255, 223, 136);
+}
+
+.m-protocol {
+  background-color: rgb(196, 146, 123);
+}
+
+.y-protocol {
+  background-color: rgb(158, 131, 255);
+}
+
+.w-protocol {
+  background-color: rgb(255, 182, 243);
+}
+
+.no-protocol {
+  background-color: rgb(170, 170, 170);
+}
+
+.highlight, .trigger-highlight {
+  border-color: black;
+}
+
+.highlight {
+  border-width: 5px;
+  box-sizing: border-box;
+}
+
+.trigger-highlight {
+  border-width: 8px;
+  box-sizing: border-box;
+}
