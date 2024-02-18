@@ -59,6 +59,7 @@ body {
   min-width: 3.5em;
   padding-block: 0.5rem;
   text-align: center;
+
 }
 
 th:empty, td:empty {
@@ -72,37 +73,64 @@ td {
 .k-protocol {
   background-color: rgb(255, 121, 121);
 }
+.k-protocol.highlight {
+  color: rgb(255, 121, 121);
+}
 
 .ng-protocol {
   background-color: rgb(94, 255, 129);
+}
+.ng-protocol.highlight {
+  color: rgb(94, 255, 129);
 }
 
 .t-protocol {
   background-color: rgb(132, 169, 255);
 }
+.t-protocol.highlight {
+  color: rgb(132, 169, 255);
+}
 
 .n-protocol {
   background-color: rgb(255, 172, 117);
+}
+.n-protocol.highlight {
+  color: rgb(255, 172, 117);
 }
 
 .p-protocol {
   background-color: rgb(255, 223, 136);
 }
+.p-protocol.highlight {
+  color: rgb(255, 223, 136);
+}
 
 .m-protocol {
   background-color: rgb(196, 146, 123);
+}
+.m-protocol.highlight {
+  color: rgb(196, 146, 123);
 }
 
 .y-protocol {
   background-color: rgb(158, 131, 255);
 }
+.y-protocol.hihglight {
+  color: rgb(158, 131, 255);
+}
 
 .w-protocol {
   background-color: rgb(255, 182, 243);
 }
+.w-protocol.highlight {
+  color: rgb(255, 182, 243);
+}
 
 .no-protocol {
   background-color: rgb(170, 170, 170);
+}
+.no-protocol.highlight {
+  color: rgb(170, 170, 170);
 }
 
 .highlight, .trigger-highlight {
@@ -110,11 +138,9 @@ td {
 }
 
 .highlight {
-  border-width: 5px;
-  box-sizing: border-box;
+  background-color: rgb(19, 18, 18);
 }
 
 .trigger-highlight {
   border-width: 8px;
-  box-sizing: border-box;
 }
