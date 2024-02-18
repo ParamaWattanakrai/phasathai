@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Transition Example</title>
-  <style>
-    .a-class {
-      color: black;
-      transition: color 0.3s ease; /* Define the transition property */
-    }
-    .b-class {
-      color: red;
-    }
-  </style>
-  <script>
-    function toggleClass() {
-      var element = document.getElementById('target-element');
-      element.classList.toggle('b-class'); // Toggle the second class
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer at the Bottom</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensure the body fills the entire viewport */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1; /* This allows the content to expand to fill remaining space */
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <button onclick="toggleClass()">Toggle Class</button>
-  <p id="target-element" class="a-class">Sample Text</p>
+    <div class="content">
+        <!-- Your main content goes here -->
+        <h1>Main Content</h1>
+        <p>This is the main content of your page.</p>
+    </div>
+    
+    <footer>
+        <!-- Your footer content goes here -->
+        <p>Footer content &copy; 2024</p>
+    </footer>
 </body>
 </html>

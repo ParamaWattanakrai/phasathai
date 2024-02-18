@@ -6,7 +6,7 @@ body {
   font-weight: 400;
 }
 
-.container {
+.table-container {
   max-width: 1440px;
   margin-inline: auto;
 }
@@ -16,7 +16,6 @@ body {
 }
 
 .split-cell > * {
-  background-color: rgb(255, 154, 154);
   padding: 0.25em;
   box-sizing: border-box;
 }
@@ -49,6 +48,12 @@ body {
 .consonant-table {
   margin-inline: auto;
   font-size: 1.25rem;
+}
+
+.consonant-table > caption {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-block: .25em;
 }
 
 .consonant-table, th, td {
@@ -127,22 +132,30 @@ td {
 }
 
 .no-protocol {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(196, 196, 196);
 }
 .no-protocol.group-highlight {
-  color: rgb(170, 170, 170);
+  color: rgb(196, 196, 196);
+}
+
+th.group-highlight {
+  color: white;
 }
 
 .group-highlight, .group-trigger-highlight {
-  background-color: rgb(44, 42, 42);
+  background-color: rgb(78, 74, 74);
   transition: 0.5s;
 }
 
-.group-highlight {
-  
+.group-trigger-highlight {
+  background-color: rgb(255, 243, 210);
+  border-width: 8px;
 }
 
-.group-trigger-highlight {
-  background-color: rgb(255, 187, 0);
-  border-width: 8px;
+.main-footer {
+  bottom: 0;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: black;
+  text-align: right;
 }
