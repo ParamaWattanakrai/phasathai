@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+		<table class="consonant-table">
+			<caption>ตารางพยัญชนะ</caption>
+			<tr>
+				<th class="phonology-trigger">สัทวิทยา</th>
+				<th class="manner-of-articulation-trigger phonology">ลักษณะ<br>การออกเสียง</th>
+				<th colspan="2" class="unaspirated-plosive-trigger manner-of-articulation phonology manner-of-articulation">กักสิถิล</th>
+				<th colspan="5" class="aspirated-plosive-fricative-trigger manner-of-articulation phonology manner-of-articulation">กักธนิต/เสียดแทรก</th>
+				<th class="nasal-trigger manner-of-articulation phonology manner-of-articulation">นาสิก</th>
+			</tr>
+			<tr>
+				<th class="articulator-trigger phonology">ฐานกรณ์</th>
+				<th class="split-cell">
+					<div class="column-trigger">แถว</div>
+					<div class="row-trigger">วรรค</div>
+				</th>
+				<th colspan="2" class="first-column-trigger column">แถวที่ ๑</th>
+				<th colspan="2" class="second-column-trigger column">แถวที่ ๒</th>
+				<th colspan="2" class="third-column-trigger column">แถวที่ ๓</th>
+				<th class="forth-column-trigger column">แถวที่ ๔</th>
+				<th class="fifth-column-trigger column">แถวที่ ๕</th>
+			</tr>
+			<tr>
+				<th class="velar-trigger phonology articulator">เพดานอ่อน</th>
+				<th class="ka-row-trigger row">วรรค กะ</th>
+				<td colspan="2" class="ko-kai k k-protocol unaspirated-plosive velar first-column ka-row mid-consonant">ก</td>
+				<td class="kho-khai kh k-protocol aspirated-plosive-fricative velar second-column ka-row high-consonant">ข</td>
+				<td class="kho-khuat kh no-protocol aspirated-plosive-fricative velar second-column ka-row high-consonant">ฃ</td>
+				<td class="kho-khway kh k-protocol aspirated-plosive-fricative velar third-column ka-row low-consonant paired-low-consonant">ค</td>
+				<td class="kho-khon kh no-protocol aspirated-plosive-fricative velar third-column ka-row low-consonant paired-low-consonant">ฅ</td>
+				<td class="kho-rakhang kh k-protocol aspirated-plosive-fricative velar forth-column ka-row low-consonant paired-low-consonant">ฆ</td>
+				<td class="ngo-ngu ng ng-protocol nasal velar fifth-column ka-row low-consonant unpaired-low-consonant">ง</td>
+			</tr>
+			<tr>
+				<th class="palatal-trigger phonology articulator">เพดานแข็ง</th>
+				<th class="ca-row-trigger row">วรรค จะ</th>
+				<td colspan="2" class="co-can c t-protocol unaspirated-plosive palatal first-column ca-row fricative mid-consonant">จ</td>
+				<td colspan="2" class="cho-ching ch t-protocol aspirated-plosive-fricative palatal fricative second-column ca-row high-consonant">ฉ</td>
+				<td class="cho-chang ch t-protocol aspirated-plosive-fricative palatal third-column fricative ca-row low-consonant paired-low-consonant">ช</td>
+				<td class="so-soh s t-protocol aspirated-plosive-fricative palatal third-column fricative ca-row low-consonant paired-low-consonant">ซ</td>
+				<td class="cho-choe ch t-protocol aspirated-plosive-fricative palatal forth-column fricative ca-row low-consonant paired-low-consonant">ฌ</td>
+				<td class="yo-ying y n-protocol nasal palatal fifth-column ca-row low-consonant unpaired-low-consonant">ญ</td>
+			</tr>
+			<tr>
+				<th rowspan="2" class="alveolar-trigger phonology articulator">ปุ่มเหงือก</th>
+				<th class="row ta1-row-trigger row">วรรค ฏะ</th>
+				<td class="do-chada d t-protocol unaspirated-plosive alveolar first-column ta1-row mid-consonant">ฎ</td>
+				<td class="to-patak t t-protocol unaspirated-plosive alveolar first-column ta1-row mid-consonant">ฏ</td>
+				<td colspan="2" class="tho-tan th t-protocol aspirated-plosive-fricative alveolar second-column ta1-row high-consonant">ฐ</td>
+				<td colspan="2" class="tho-mohnthoh th t-protocol aspirated-plosive-fricative alveolar third-column ta1-row low-consonant paired-low-consonant">ฑ</td>
+				<td class="tho-phuthao th t-protocol aspirated-plosive-fricative alveolar forth-column ta1-row low-consonant paired-low-consonant">ฒ</td>
+				<td class="no-nen n n-protocol nasal alveolar fifth-column ta1-row low-consonant unpaired-low-consonant">ณ</td>
+			</tr>
+			<tr>
+				<th class="ta2-row-trigger row">วรรค ตะ</th>
+				<td class="do-dek d t-protocol unaspirated-plosive alveolar first-column ta2-row mid-consonant">ด</td>
+				<td class="to-tao t t-protocol unaspirated-plosive alveolar first-column ta2-row mid-consonant">ต</td>
+				<td colspan="2" class="tho-thung th t-protocol aspirated-plosive-fricative alveolar second-column ta2-row high-consonant">ถ</td>
+				<td colspan="2" class="tho-thahan th t-protocol aspirated-plosive-fricative alveolar third-column ta2-row low-consonant paired-low-consonant">ท</td>
+				<td class="tho-thohng th t-protocol aspirated-plosive-fricative alveolar forth-column ta2-row low-consonant paired-low-consonant">ธ</td>
+				<td class="no-nu n n-protocol nasal alveolar fifth-column ta2-row low-consonant unpaired-low-consonant">น</td>
+			</tr>		
+			<tr>
+				<th class="labial-trigger phonology articulator">ริมฝีปาก</th>
+				<th class="pa-row-trigger row">วรรค ปะ</th>
+				<td class="bo-baimai b p-protocol unaspirated-plosive labial first-column pa-row mid-consonant">บ</td>
+				<td class="po-pla p p-protocol unaspirated-plosive labial first-column pa-row mid-consonant">ป</td>
+				<td class="pho-phueng ph no-protocol aspirated-plosive-fricative labial second-column pa-row high-consonant">ผ</td>
+				<td class="fo-fa f no-protocol aspirated-plosive-fricative labial second-column pa-row high-consonant">ฝ</td>
+				<td class="pho-phan ph p-protocol aspirated-plosive-fricative labial third-column pa-row low-consonant paired-low-consonant">พ</td>
+				<td class="fo-fan f p-protocol aspirated-plosive-fricative labial third-column pa-row low-consonant paired-low-consonant">ฟ</td>
+				<td class="ph-samphao ph p-protocol aspirated-plosive-fricative labial forth-column pa-row low-consonant paired-low-consonant">ภ</td>
+				<td class="mo-ma m m-protocol nasal labial fifth-column pa-row low-consonant unpaired-low-consonant">ม</td>
+			</tr>
+			<tr>
+				<th></th>
+				<th rowspan="2" class="consonant-class-trigger">ไตรยางศ์</th>
+				<th rowspan="2" colspan="2" class="mid-consonant-trigger consonant-class">กลาง</th>
+				<th rowspan="2" colspan="2" class="high-consonant-trigger consonant-class">สูง</th>
+				<th colspan="3" class="paired-low-consonant-trigger consonant-class">ต่ำคู่</th>
+				<th class="unpaired-low-consonant-trigger consonant-class">ต่ำเดี่ยว</th>
+			</tr>
+			<tr>
+				<th></th>
+				<th colspan="4" class="low-consonant-trigger consonant-class">ต่ำ</th>
+			</tr>
+			<tr>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th class="split-cell">
+					<div class="phonology-trigger">สัทวิทยา</div>
+					<div class="row-trigger">วรรค</div>
+				</th>
+				<th colspan="4" class="trill-approximant-trigger phonology manner-of-articulation ">รัว/เปิด</th>
+				<th colspan="4" class="fricative-trigger phonology manner-of-articulation">เสียดแทรก</th>
+				<th class="alveolar-lateral-approximant-trigger phonology manner-of-articulation articulator">เปิดข้างลิ้น<br>ปุ่มเหงือก</th>
+				<th class="glottal-stop-trigger phonology manner-of-articulation articulator">กัก<br>เส้นเสียง</th>
+				<th class="glottal-fricative-trigger phonology manner-of-articulation articulator">เสียดแทรก<br>เส้นเสียง</th>
+			</tr>
+			<tr>
+				<th></th>
+				<th class="extra-row-trigger row">เศษวรรค</th>
+				<td class="yo-yak y y-protocol palatal low-consonant unpaired-low-consonant trill-approximant extra-row">ย</td>
+				<td class="ro-ruea r n-protocol alveolar low-consonant unpaired-low-consonant trill-approximant extra-row">ร</td>
+				<td class="lo-ling l n-protocol alveolar low-consonant unpaired-low-consonant trill-approximant extra-row">ล</td>
+				<td class="wo-waen w w-protocol velar labial low-consonant unpaired-low-consonant trill-approximant extra-row">ว</td>
+				<td class="so-sala s t-protocol fricative palatal high-consonant extra-row">ศ</td>
+				<td class="so-ruesi s t-protocol fricative palatal high-consonant extra-row">ษ</td>
+				<td class="so-suea s t-protocol fricative palatal high-consonant extra-row">ส</td>
+				<td class="ho-hip h no-protocol fricative high-consonant glottal-fricative extra-row">ห</td>
+				<td class="lo-cula l n-protocol alveolar low-consonant unpaired-low-consonant alveolar-lateral-approximant extra-row">ฬ</td>
+				<td class="o-ang o no-protocol unaspirated-plosive mid-consonant glottal-stop extra-row">อ</td>
+				<td class="ho-nohkhuk no-protocol fricative low-consonant paired-low-consonant glottal-fricative extra-row">ฮ</td>
+			</tr>
+			<tr>
+				<th></th>
+				<th rowspan="2" class="consonant-class-trigger">ไตรยางศ์</th>
+				<th colspan="4" class="unpaired-low-consonant-trigger consonant-class">ต่ำเดี่ยว</th>
+				<th rowspan="2" colspan="4" class="high-consonant-trigger consonant-class">สูง</th>
+				<th class="unpaired-low-consonant-trigger consonant-class">ต่ำเดี่ยว</th>
+				<th rowspan="2" class="mid-consonant-trigger consonant-class">กลาง</th>
+				<th class="paired-low-consonant-trigger consonant-class">ต่ำคู่</th>
+			</tr>
+			<tr>
+				<th></th>
+				<th colspan="4" class="low-consonant-trigger consonant-class">ต่ำ</th>
+				<th class="low-consonant-trigger consonant-class">ต่ำ</th>
+				<th class="low-consonant-trigger consonant-class">ต่ำ</th>
+			</tr>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
