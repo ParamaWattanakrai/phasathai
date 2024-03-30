@@ -48,6 +48,7 @@ body {
 .consonant-table {
   margin-inline: auto;
   font-size: 1.25rem;
+  border-width: 3px;
 }
 
 .consonant-table > caption {
@@ -60,7 +61,6 @@ body {
   border-color: rgb(0, 0, 0);
   border-style: solid;
   border-collapse: collapse;
-  border-width: 3px;
 
   min-width: 3.5em;
   padding-block: 0.5rem;
@@ -73,12 +73,24 @@ th:empty, td:empty {
   border: none;
 }
 
-td {
+.consonant-table td {
   font-size: 1.5em;
 }
 
+.sukhothai-left {
+  border-right-width: 1px;
+}
+
+.sukhothai-right {
+  border-left-width: 1px
+}
+
+.extra-row {
+  border-inline-width: 1px;
+}
+
 .group-highlight {
-  background-color: rgb(196, 149, 87);
+  background-color: rgb(160, 121, 172);
 }
 
 .group-trigger-highlight {
