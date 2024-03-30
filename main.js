@@ -12,7 +12,7 @@ const HIGHLIGHT_DICT = {
 const CONSONANT_SOUNDS_LIST = ['k','kh','ng','c','ch','y','d','t','th','n','b','p','ph','f','m','r','l','w','s','h','o']
 
 const CONSONANT_HIGHLIGHT_DICT = {
-    '.ko-kai': ['k', '.mid-consonant-trigger', '.first-column-trigger', '.ka-row', '.unaspirated-plosive-trigger']
+    '.ko-kai': ['k', '.mid-consonant-trigger', '.first-column-trigger', '.ka-row', '.unaspirated-plosive-trigger', '.velar']
 }
 
 const CONSONANTS = document.querySelectorAll('.consonant')
