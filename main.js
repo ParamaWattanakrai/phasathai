@@ -2,7 +2,7 @@ const HIGHLIGHT_DICT = {
     '.phonology-trigger': '.phonology', '.manner-of-articulation-trigger': '.manner-of-articulation', '.unaspirated-plosive-trigger': '.unaspirated-plosive', '.aspirated-plosive-fricative-trigger': '.aspirated-plosive-fricative', '.nasal-trigger': '.nasal',
     '.articulator-trigger': '.articulator', '.velar-trigger': '.velar', '.palatal-trigger': '.palatal', '.alveolar-trigger': '.alveolar', '.labial-trigger': '.labial',
     '.column-trigger': '.column', '.first-column-trigger': '.first-column', '.second-column-trigger': '.second-column', '.third-column-trigger': '.third-column', '.forth-column-trigger': '.forth-column', '.fifth-column-trigger': '.fifth-column',
-    '.row-trigger': '.row', '.ka-row-trigger': '.ka-row', '.ca-row-trigger': '.ca-row', '.ta1-row-trigger': '.ta1-row', '.ta2-row-trigger': '.ta2-row', '.pa-row-trigger': '.pa-row',
+    '.row-trigger': '.row', '.ka-row-trigger': '.ka-row', '.ca-row-trigger': '.ca-row', '.big-ta-row-trigger': '.big-ta-row', '.small-ta-row-trigger': '.small-ta-row', '.pa-row-trigger': '.pa-row',
     '.consonant-class-trigger': '.consonant-class', '.mid-consonant-trigger': '.mid-consonant', '.high-consonant-trigger': '.high-consonant', '.low-consonant-trigger': '.low-consonant', '.paired-low-consonant-trigger': '.paired-low-consonant', '.unpaired-low-consonant-trigger': '.unpaired-low-consonant',
     '.trill-approximant-trigger': '.trill-approximant', '.fricative-trigger': '.fricative', '.alveolar-lateral-approximant-trigger': '.alveolar-lateral-approximant', '.glottal-stop-trigger': '.glottal-stop',  '.glottal-fricative-trigger': '.glottal-fricative',
     '.extra-row-trigger': '.extra-row',
@@ -10,6 +10,10 @@ const HIGHLIGHT_DICT = {
 }
 
 const CONSONANT_SOUNDS_LIST = ['k','kh','ng','c','ch','y','d','t','th','n','b','p','ph','f','m','r','l','w','s','h','o']
+
+const CONSONANT_HIGHLIGHT_DICT = {
+    '.ko-kai': ['k', '.mid-consonant-trigger', '.first-column-trigger', '.ka-row', '.unaspirated-plosive-trigger']
+}
 
 const CONSONANTS = document.querySelectorAll('.consonant')
 
