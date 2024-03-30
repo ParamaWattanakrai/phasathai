@@ -77,12 +77,8 @@ td {
   font-size: 1.5em;
 }
 
-th.group-highlight {
-  color: white;
-}
-
 .group-highlight {
-  background-color: rgb(78, 74, 74);
+  background-color: rgb(165, 137, 75);
 }
 
 .group-trigger-highlight {
