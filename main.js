@@ -106,8 +106,6 @@ function haveCommonElements(arr1, arr2){
 }
 
 const toggleHighlight = (triggeredElement, key) => {
-    console.log(key)
-    console.log(HIGHLIGHT_DICT[key])
     let allKeyElements = document.querySelectorAll(key);
     let valueElements = document.querySelectorAll(HIGHLIGHT_DICT[key]);
 
@@ -120,7 +118,6 @@ const toggleHighlight = (triggeredElement, key) => {
     }
 
     if ((highlightedElements.length + unhighlightedElements.length) > 0) {
-        console.log('huh')
         CONSONANTS.forEach((element) => {
             element.classList.remove('unhighlight')
         })
@@ -136,7 +133,6 @@ const toggleHighlight = (triggeredElement, key) => {
         consonantKeyHighlight = haveCommonElements(allKeyElements, CONSONANTS)
         consonantValueHighlight = haveCommonElements(valueElements, CONSONANTS)
         if (consonantKeyHighlight || consonantValueHighlight) {
-            console.log('how')
             CONSONANTS.forEach((element) => {
                 element.classList.add('unhighlight')
             })
