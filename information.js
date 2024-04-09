@@ -41,7 +41,7 @@ const convertNumeral = (arabicNumbers) => {
 
 const toggleBlocks = document.querySelectorAll('.toggle-block');
 
-const toggleInformation = (element, character) => {
+const changeInformation = (character) => {
     let information = INFORMATION_DICT[character]
     console.log(information)
 
@@ -59,7 +59,7 @@ Object.keys(INFORMATION_DICT).forEach((key) => {
     let elements = document.querySelectorAll(key);
     elements.forEach((element) => {
         element.addEventListener('click', () => {
-            toggleInformation(element, key)
+            changeInformation(key)
         })
     })
 });
