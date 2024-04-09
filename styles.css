@@ -4,6 +4,7 @@ body {
 
   font-family: "Sarabun", sans-serif;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -138,10 +139,27 @@ th:empty, td:empty {
   background-color:rgb(78, 74, 74);
 }
 
+.consonant-information {
+  background-color: lightgreen;
+  padding: 1.5em;
+}
+
 .main-footer {
   bottom: 0;
   padding: 2rem;
   margin-top: 3rem;
   color: black;
   text-align: right;
+}
+
+.toggle-trigger:hover {
+  cursor: pointer;
+}
+
+.toggle-affected {
+  display: none;
+}
+
+.show {
+  display: block;
 }
