@@ -1,4 +1,15 @@
-console.log('nice')
+const NUMERAL_DICT = {
+    '0': '๐',
+    '1': '๑',
+    '2': '๒',
+    '3': '๓',
+    '4': '๔',
+    '5': '๕',
+    '6': '๖',
+    '7': '๗',
+    '8': '๘',
+    '9': '๙',
+}
 const INFORMATION_DICT = {
     '.ko-kai': {
         'name': 'กอ ไก่',
@@ -17,6 +28,17 @@ const INFORMATION_DICT = {
     },
 }
 
+const convertNumeral = (arabicNumbers) => {
+    let thaiNumbers = ''
+    if (arabicNumbers.length == 1) {
+        return NUMERAL_DICT[arabicNumbers]
+    }
+    arabicNumbers.forEach((arabicNumber) => {
+        thaiNumbers += NUMERAL_DICT[arabicNumber]
+    })
+    return thaiNumbers
+}
+
 const toggleBlocks = document.querySelectorAll('.toggle-block');
 
 const toggleInformation = (element, character) => {
@@ -27,8 +49,7 @@ const toggleInformation = (element, character) => {
         let element = document.querySelector('.info-' + key);
         let toBeInserted = information[key]
         if (Array.isArray(toBeInserted)) {
-            toBeInserted = '(' + toBeInserted.length + ') ' + toBeInserted.join(' ')
-            console.log(toBeInserted)
+            toBeInserted = '(' + convertNumeral(toBeInserted.length.toString()) + ') ' + toBeInserted.join(' ')
         }
         element.innerHTML = toBeInserted
     })
@@ -36,7 +57,6 @@ const toggleInformation = (element, character) => {
 
 Object.keys(INFORMATION_DICT).forEach((key) => {
     let elements = document.querySelectorAll(key);
-    console.log(elements)
     elements.forEach((element) => {
         element.addEventListener('click', () => {
             toggleInformation(element, key)
