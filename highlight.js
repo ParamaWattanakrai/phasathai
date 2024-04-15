@@ -69,7 +69,7 @@ const HIGHLIGHT_DICT = {
     '.no-nu': ['.n', '.low-consonant-trigger', '.unpaired-low-consonant-trigger', '.nasal-trigger', '.alveolar-trigger', '.fifth-column-trigger', '.small-ta-row-trigger'],
 
     '.bo-baimai': ['.b', '.mid-consonant-trigger', '.unaspirated-plosive-trigger', '.labial-trigger', '.first-column-trigger', '.pa-row-trigger'],
-    '.po-pla': ['.b', '.mid-consonant-trigger', '.unaspirated-plosive-trigger', '.labial-trigger', '.first-column-trigger', '.pa-row-trigger'],
+    '.po-pla': ['.p', '.mid-consonant-trigger', '.unaspirated-plosive-trigger', '.labial-trigger', '.first-column-trigger', '.pa-row-trigger'],
     '.pho-phueng': ['.ph', '.high-consonant-trigger', '.aspirated-plosive-fricative-trigger', '.labial-trigger', '.second-column-trigger', '.pa-row-trigger'],
     '.fo-fa': ['.f', '.high-consonant-trigger', '.aspirated-plosive-fricative-trigger', '.labial-trigger', '.second-column-trigger', '.pa-row-trigger'],
     '.pho-phan': ['.ph', '.low-consonant-trigger', '.paired-low-consonant-trigger', '.aspirated-plosive-fricative-trigger', '.labial-trigger', '.third-column-trigger', '.pa-row-trigger'],
