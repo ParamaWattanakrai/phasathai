@@ -11,6 +11,8 @@ body {
   margin: 0 auto;
 }
 
+/* Split Cell */
+
 .split-cell {
   position: relative;
 }
@@ -44,6 +46,8 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
+
+/* Table */
 
 .consonant-table {
   margin-inline: auto;
@@ -138,6 +142,13 @@ th:empty, td:empty {
   background-color:rgb(78, 74, 74);
 }
 
+@media only screen and (max-width: 1440px) {
+  .consonant-table {
+      font-size: 12px;
+  }
+}
+
+/* Consonant Info */
 
 .consonant-information {
   background-color: lightgreen;

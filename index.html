@@ -74,7 +74,7 @@
 			</tr>		
 			<tr>
 				<th class="labial-trigger phonology articulator">ริมฝีปาก</th>
-				<th class="pa-row-trigger row">วรรค ปะ</th>
+				<th class="pa-row-trigger row" value="1">วรรค ปะ</th>
 				<td class="sukhothai-left consonant bo-baimai b p-protocol unaspirated-plosive labial first-column pa-row mid-consonant">บ</td>
 				<td class="sukhothai-right consonant po-pla p p-protocol unaspirated-plosive labial first-column pa-row mid-consonant">ป</td>
 				<td class="sukhothai-left consonant pho-phueng ph no-protocol aspirated-plosive-fricative labial second-column pa-row high-consonant">ผ</td>
@@ -82,7 +82,7 @@
 				<td class="sukhothai-left consonant pho-phan ph p-protocol aspirated-plosive-fricative labial third-column pa-row low-consonant paired-low-consonant">พ</td>
 				<td class="sukhothai-right consonant fo-fan f p-protocol aspirated-plosive-fricative labial third-column pa-row low-consonant paired-low-consonant">ฟ</td>
 				<td class="consonant pho-samphao ph p-protocol aspirated-plosive-fricative labial forth-column pa-row low-consonant paired-low-consonant">ภ</td>
-				<td class="consonant mo-ma m m-protocol nasal labial fifth-column pa-row low-consonant unpaired-low-consonant">ม</td>
+				<td class="consonant mo-ma m m-protocol nasal labial fifth-column pa-row low-consonant unpaired-low-consonant" value="3">ม</td>
 			</tr>
 			<tr>
 				<th></th>
@@ -115,7 +115,7 @@
 				<th></th>
 				<th class="extra-row-trigger row">เศษวรรค</th>
 				<td class="consonant yo-yak y y-protocol palatal low-consonant unpaired-low-consonant trill-approximant extra-row">ย</td>
-				<td class="consonant ro-ruea r n-protocol alveolar low-consonant unpaired-low-consonant trill-approximant extra-row">ร</td>
+				<td class="consonant ro-ruea r n-protocol alveolar low-consonant unpaired-low-consonant trill-approximant extra-row" value="2">ร</td>
 				<td class="consonant lo-ling l n-protocol alveolar low-consonant unpaired-low-consonant trill-approximant alveolar-lateral-approximant extra-row">ล</td>
 				<td class="consonant wo-waen w w-protocol velar labial low-consonant unpaired-low-consonant trill-approximant extra-row">ว</td>
 				<td class="consonant so-sala s t-protocol aspirated-plosive-fricative palatal fricative palatal high-consonant extra-row">ศ</td>
@@ -148,19 +148,29 @@
       <div class="consonant-appearance-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/1_-_%E0%B8%81_Thai_Alphabets.jpg" alt="" class="consonant-handwriting">
         <div class="name-form-container">
-          <p class="info-name">name</p>
+          <p class="info-name">(name)</p>
           <img class="consonant-forms" src="https://cms.cadsondemak.com/uploads/Plex_Illustration_03_e52c0a6ad6.jpg" alt="">
         </div>
       </div>
-      <p>ลำดับพยัญชนะ: <span class="info-consonant-order">order</span></p>
-      <p>ไตรยางศ์: <span class="info-consonant-class">class</span></p>
-      <p>มาตราตัวสะกด: <span class="info-protocol">protocol</span></p>
+      <p>ลำดับพยัญชนะ: <span class="info-consonant-order">(order)</span></p>
+      <p>ไตรยางศ์: <span class="info-consonant-class">(class)</span></p>
+      <p>มาตราตัวสะกด: <span class="info-protocol">(protocol)</span></p>
+	  <p>วรรค: <span class="info-row">(row)</span></p>
+	  <p>แถวที่: <span class="info-column">(column)</span></p>
       <div class="toggle-block">
         <p class="toggle-trigger">การออกเสียง</p>
         <div class="toggle-affected">
           <ul>
-            <li>สัทอักษรสากล: <span class="info-ipa">ipa</span></li>
-            <li>สัทวิทยา: <span class="info-phonology">nerd</span></li>
+			<li>พยัญชนะต้น</li>
+				<ul>
+					<li>สัทอักษรสากล: <span class="info-initial-ipa">(ipa)</span></li>
+					<li>สัทวิทยา: <span class="info-initial-phonology">(phonology)</span></li>
+				</ul>
+			<li>ตัวสะกด</li>
+				<ul>
+					<li>สัทอักษรสากล: <span class="info-final-ipa">(ipa)</span></li>
+					<li>สัทวิทยา: <span class="info-final-phonology">(phonology)</span></li>
+				</ul>
           </ul>
         </div>
       </div>
@@ -169,10 +179,11 @@
         <p class="toggle-trigger">อักษรที่เกี่ยวข้อง</p>
         <div class="toggle-affected">
           <ul>
-            <li>เหมือนทุกประการ: <span class="info-identical">identical</span></li>
-            <li>เสียงพยัญชนะต้นเดียวกัน: <span class="info-identical-initial-sound">same sound</span></li>
-            <li>อยู่ในมาตราตัวสะกดเดียวกัน: <span class="info-identical-protocol">same protocol</span></li>
-            <li>อยู่ในไตรยางศ์เดียวกัน: <span class="info-identical-class">same class</span></li>
+            <li>เหมือนทุกประการ: <span class="info-exactly-identical">(exactly identical)</span></li>
+			<li>อยู่ในช่องเดียวกัน: <span class="info-same-cell">(same cell)</span></li>
+            <li>เสียงพยัญชนะต้นเดียวกัน: <span class="info-identical-initial-sound">(identical sound)</span></li>
+            <li>อยู่ในมาตราตัวสะกดเดียวกัน: <span class="info-same-protocol">(same protocol)</span></li>
+            <li>อยู่ในไตรยางศ์เดียวกัน: <span class="info-same-class">(same class)</span></li>
           </ul>
         </div>
       </div>
